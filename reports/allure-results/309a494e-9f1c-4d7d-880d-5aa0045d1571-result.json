@@ -1,1 +1,0 @@
-{"name": "test_example[chromium]", "status": "passed", "parameters": [{"name": "browser_name", "value": "'chromium'"}], "start": 1788253582649, "stop": 1788253590274, "uuid": "0519084a-b7a0-40f7-8a8e-51b9dbd55405", "testCaseId": "1e9e741c1f5dc6fe7e0dabf8fbd5b86f", "fullName": "aitesting.test_shadow_dom#test_example", "titlePath": ["aitesting", "test_shadow_dom.py"]}
