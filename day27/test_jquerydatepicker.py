@@ -1,0 +1,47 @@
+import pytest
+from playwright.sync_api import Page,expect
+
+def select_date(page, target_year, target_month, target_date, is_future):
+    # selecting month and year from date picker
+    while True:
+        current_month=page.locator(".ui-datepicker-month").text_content()
+        current_year=page.locator(".ui-datepicker-year").text_content()
+
+        if current_month==target_month and current_year==target_year:
+            break
+        if is_future==True:
+            page.locator(".ui-datepicker-next").click()  # for future date
+        else:
+            page.locator(".ui-datepicker-prev").click()  # for past date
+
+    # selecting date from date picker
+    all_dates=page.locator(".ui-datepicker-calendar td").all()
+
+    for dt in all_dates:
+        date_text=dt.inner_text()
+        if date_text==target_date:
+            dt.click()
+            break
+
+def test_jquery_datepicker(page:Page):
+    page.goto("https://testautomationpractice.blogspot.com/")
+    date_input=page.locator("#datepicker")
+
+    # Approach 1:
+    # date_input.fill("06/26/1992")  # mm/dd/yyyy
+    # expect(date_input).to_have_value("06/26/1992")
+
+    # Approach 2:
+    is_future=False       # it should be True for future date and False for past date
+    year="1992"
+    month="June"
+    date="26"
+
+    date_input.click()
+    select_date(page, year, month, date, is_future)
+    print("Selected Date: ",date_input.input_value())
+    expect(date_input).to_have_value("06/26/1992")
+
+
+    page.wait_for_timeout(5000)
+

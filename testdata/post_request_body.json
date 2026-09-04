@@ -1,0 +1,11 @@
+{
+        "firstname" : "MLS",
+        "lastname" : "Ganesh",
+        "totalprice" : 2026,
+        "depositpaid" : true,
+        "bookingdates" : {
+            "checkin" : "2026-01-04",
+            "checkout" : "2026-08-05"
+        },
+    "additionalneeds" : "Lunch"
+}
