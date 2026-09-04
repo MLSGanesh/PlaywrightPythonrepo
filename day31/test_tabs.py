@@ -47,4 +47,7 @@ def test_multiple_Orange_tabs(playwright:Playwright):
     childpage=all_pages[1]
     print("URL of child page:",childpage.url)
 
+    context.close()
+    browser.close()
+
 
