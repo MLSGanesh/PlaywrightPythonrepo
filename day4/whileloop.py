@@ -39,10 +39,10 @@
 
 # Example 4: print numbers 1 to 10 in descending order
 
-# i=10
-# while i>=1:
-#     print(i)
-#     i-=1  # i=i-1
+i=10
+while i>=1:
+    print(i)
+    i-=1  # i=i-1
 
 # Example 5:
 
