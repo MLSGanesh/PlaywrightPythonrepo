@@ -168,3 +168,67 @@ import math
 #     else:
 #         f[c]=1
 # print(f)
+
+
+# string compression
+
+# def compress_str(text):
+#     compressed=""
+#     count  = 1
+#
+#     for i in range(1,len(text)):
+#         if text[i] == text[i-1]:
+#             count += 1
+#
+#         else:
+#             compressed += text[i-1]+str(count)
+#             count=1
+#
+#     compressed += text[-1]+str(count)
+#     return compressed
+#
+# text= "aaabbscccdddd"
+# print(compress_str(text))
+
+# find the first non-repeated character
+
+# def char_nonrepeated(text):
+#     for c in text:
+#         if text.count(c) == 1:
+#             return c
+#
+#     return None
+#
+# text = "aaabccdef"
+# print(char_nonrepeated(text))
+
+
+# merge two arrays
+
+# a = [1,2,4]
+# b = [4,5,6]
+#
+# m = a+b
+# print(m)
+
+# a = ["apple", "banana","dragon fruit"]
+# b = ["cherry","apple","fiji"]
+#
+# m = a+b
+# print(m)
+
+# find common elements
+
+# a= str(input())
+# b= str(input())
+#
+# for c in a:
+#     if c in a and c in b:
+#         print(c)
+
+# x = [5,0,2,6]
+# y = [4,5,2,6]
+#
+# for n in x:
+#     if n in x and n in y:
+#         print(n)
