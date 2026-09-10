@@ -188,10 +188,58 @@ from collections import Counter
 
 # even number
 
-n = int(input())
-if n%2==0:
-    print("Even Number")
-else:
-    print("Not an even number")
+# n = int(input())
+# if n%2==0:
+#     print("Even Number")
+# else:
+#     print("Not an even number")
+
+# print second highest score
+
+# score = [2,3,66,97,88,88,100,101]
+#
+# a = list(set(score))
+# a.sort(reverse=True)
+# print(a)
+# print(a[1])
+
+# caseswap
+
+# a= "Hello World"
+# # b=a.swapcase()
+# # print(b)
+# b = []
+#
+# for c in a:
+#     if c == c.upper():
+#         b.append(c.lower())
+#     else:
+#         b.append(c."upper"())
+#
+# b = "".join(b)
+# print(b)
+# # using list comprehension
+# s = "".join([ c.lower() if c.isupper() else c.upper() for c in a])
+# print(s)
+
+# # print lowest score persons
+# records = [["alpha",120.0],["beta",50.0],["theta",55.0],["dootha",60.0]]
+#
+# # for c in records:
+# #     for a in c:
+# #         if c[a][1]
+#
+# # s = min(record[1] for record in records)
+# #
+# # for name, score in records:
+# #     if score == s:
+# #         print(name)
+#
+# s = list(record[1] for record in records)
+# s.sort(reverse=True)
+# print(s)
+# for name, score in records:
+#     if score == s[1]:
+#         print(name)
 
 
