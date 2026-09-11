@@ -29,18 +29,20 @@ def test_create_booking(playwright:Playwright):
     # field/attribute validations
     assert "bookingid" in response_body
     assert "booking" in response_body
+    id = response_body["bookingid"]
+    print(id)
 
     # data validation
     booking = response_body["booking"]
-    assert booking["firstname"]=="Jim"
-    assert booking["lastname"]=="Brown"
-    assert booking["totalprice"]==1002
+    assert booking["firstname"]=="MLS"
+    assert booking["lastname"]=="Ganesh"
+    assert booking["totalprice"]==2026
     assert booking["depositpaid"] is True
-    assert booking["additionalneeds"]=="Extra plates and Spoons"
+    assert booking["additionalneeds"]=="Lunch"
 
     # nested json validation
-    assert booking["bookingdates"]["checkin"]== "2026-01-02"
-    assert booking["bookingdates"]["checkout"] == "2026-08-02"
+    assert booking["bookingdates"]["checkin"]== "2026-01-04"
+    assert booking["bookingdates"]["checkout"] == "2026-08-05"
 
     # close the API context
     request_context.dispose()
