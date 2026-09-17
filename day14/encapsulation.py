@@ -20,3 +20,4 @@ class Student():
 stu=Student("MLS")
 stu.set_marks(90)
 print(stu.get_marks())
+
