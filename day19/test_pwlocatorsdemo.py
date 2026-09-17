@@ -130,7 +130,7 @@ def test_orangeDashboard(page:Page):
 #     # home.click()
 #
 #     # 4) page.get_by_label()
-#     label= page.get_by_label("Suggession Class Example")
+#     label= page.get_by_label("Suggestion Class Example")
 #     expect(label).to_be_visible()
 #     print(label)
 #

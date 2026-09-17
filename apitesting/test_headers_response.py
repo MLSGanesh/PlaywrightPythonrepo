@@ -16,8 +16,8 @@ def test_headers_in_response(playwright:Playwright):
         print(f"{key} ===> {value}")
 
     # validate specific headers
-    print("The Value of content type is ===>", headers.get("content type"))
-    assert "text/html" in headers.get("content type")
+    print("The Value of content type is ===>", headers.get("content-type"))
+    assert "private, max-age=0" in headers.get("cache-control")
     assert "gzip" == headers.get("content-encoding")
 
     # Validate header presence

@@ -10,7 +10,7 @@ from playwright.sync_api import Playwright
 def validate_json_schema(response_json,myschema):
     try:
         validate(instance=response_json,schema=myschema)
-        print("Schema validation successfull")
+        print("Schema validation successful")
         return True
     except ValidationError as e:
         print("Schema validation failed")
