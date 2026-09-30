@@ -181,3 +181,16 @@
 #     print("Harshad number")
 # else:
 #     print("Not a Harshad number")
+
+# # input = "python is a programming language and python is easy"
+# # output = "python is a programming language and easy"
+#
+# input = "python is a programming language and python is easy"
+# words = input.split()
+# l = []
+# for c in words:
+#     if c not in l:
+#         l.append(c)
+# print(l)
+# l = " ".join(l)
+# print(l)
