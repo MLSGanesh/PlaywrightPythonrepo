@@ -3,6 +3,13 @@
 # a = [10, 20, 30, 40, 50]
 # a[0], a[-1] = a[-1],a[0]
 # print(a)
+#
+# #  Sample tests
+# a.insert(3,35)
+# a.append(45)
+# print(a)
+
+
 
 # # 2. Given "selenium playwright pytest", print the word with the most characters.
 #
