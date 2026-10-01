@@ -201,3 +201,32 @@
 # print(l)
 # l = " ".join(l)
 # print(l)
+
+# # Input = "I Love My India"
+#
+# i = "I Love My India"
+# a = i[::-1]
+# print(a)
+# or
+# i = "I Love My India"
+# r = ""
+# for c in i:
+#     r = c+r
+# print(r)
+
+# # find triplets from this list whose sum is always 0
+#
+# numbers = [-1, 1, 0, 2, 1, -2]
+#
+# triplets = []
+#
+# for i in range(len(numbers)):
+#     for j in range(i + 1, len(numbers)):
+#         for k in range(j + 1, len(numbers)):
+#             if numbers[i] + numbers[j] + numbers[k] == 0:
+#                 triplet = sorted([numbers[i], numbers[j], numbers[k]])
+#
+#                 if triplet not in triplets:
+#                     triplets.append(triplet)
+#
+# print(triplets)
