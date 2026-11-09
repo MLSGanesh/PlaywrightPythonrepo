@@ -104,14 +104,39 @@
 #
 # print(filtered_students)
 
-# 5. Given "a1b22c333", print each digit along with how many consecutive times it occurs.
-# Expected: 1 → 1, 2 → 2, 3 → 3
-n = "a1b22c333"
-a = list(n)
-count = 0
-for i in range(1,len(n)):
-    for j in range(i-1,len(n)):
-        if n[j].isdigit() and n[i]==n[j]:
-            count += 1
-            print(n[i],"->",count)
-            break
+# # 5. Given "a1b22c333", print each digit along with how many consecutive times it occurs.
+# # Expected: 1 → 1, 2 → 2, 3 → 3
+# n = "a1b22c333"
+# a = list(n)
+# count = 0
+# for i in range(1,len(n)):
+#     for j in range(i-1,len(n)):
+#         if n[j].isdigit() and n[i]==n[j]:
+#             count += 1
+#             print(n[i],"->",count)
+#             break
+#
+# # Correct One
+# text = "a1b22c333"
+#
+# current_digit = ""
+# count = 0
+#
+# for char in text:
+#     if char.isdigit():
+#         if char == current_digit:
+#             count += 1
+#         else:
+#             if current_digit != "":
+#                 print(current_digit, "→", count)
+#
+#             current_digit = char
+#             count = 1
+#     else:
+#         if current_digit != "":
+#             print(current_digit, "→", count)
+#             current_digit = ""
+#             count = 0
+#
+# if current_digit != "":
+#     print(current_digit, "→", count)
